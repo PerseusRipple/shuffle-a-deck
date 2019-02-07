@@ -53,22 +53,23 @@ const main = () => {
 
   console.log(deck)
 
-  return deck
+  // Deal Card
 
-  // Deal Deck
-
-  for(
-    let deck = Math.floor(Math.random() * cardAtPositionShuffle.length)
-     return cardAtPositionShuffle.splice(card, 1)[0]
-}
+  shuffle.splice(deck, 1)
+  return deck[shuffle]
+  console.log('return')
 
 
+/* for(let deck = Math.floor(Math.random() * cardAtPositionShuffle.length)
+    return cardAtPositionShuffle.splice(card, 1)[0] */
 
-  /*
+/*
  const mySection = document.createElement('section')
 mySection.textContent = 'Hello, World'
 document.querySelector('.container').appendChild(mySection) */
 
 // i = shuffle
-
-document.addEventListener('DOMContentLoaded', main)
+document
+  .querySelector('#deal')
+  .addEventListener('click', -'deck[shuffle]')
+  .addEventListener('DOMContentLoaded', 'main')
