@@ -57,13 +57,18 @@ const main = () => {
 
   // Deal Deck
 
-  /* document.querySelector('.cards').appendChild(_li) */
+  for(
+    let deck = Math.floor(Math.random() * cardAtPositionShuffle.length)
+     return cardAtPositionShuffle.splice(card, 1)[0]
+}
+
+
 
   /*
  const mySection = document.createElement('section')
 mySection.textContent = 'Hello, World'
 document.querySelector('.container').appendChild(mySection) */
-}
+
 // i = shuffle
 
 document.addEventListener('DOMContentLoaded', main)
