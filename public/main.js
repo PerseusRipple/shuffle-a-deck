@@ -5,7 +5,7 @@ const main = () => {
 
   let deck = []
 
-  const valueOfCards = [
+  const valuesOfCards = [
     'Ace',
     'King',
     'Queen',
@@ -24,11 +24,11 @@ const main = () => {
 
   // Build Deck
 
-  for (let values = 0; values < valueOfCards.length; values++) {
+  for (let value = 0; value < valuesOfCards.length; value++) {
     for (let suits = 0; suits < suitsOfCards.length; suits++) {
-      let value = valueOfCards[values]
+      let values = valuesOfCards[value]
       let suit = suitsOfCards[suits]
-      deck.push('the ' + value + ' of ' + suit)
+      deck.push('the ' + values + ' of ' + suit)
     }
   }
 
@@ -45,7 +45,7 @@ const main = () => {
     // Put the card at position shuffle at position random
     deck[shuffle] = cardAtPositionRandom
 
-    // Put the card at poistion random at position shuffle
+    // Put the card at position random at position shuffle
     deck[random] = cardAtPositionShuffle
 
     console.log(deck)
@@ -53,7 +53,9 @@ const main = () => {
 
   console.log(deck)
 
-  //Deal Deck
+  return deck
+
+  // Deal Deck
 
   /* document.querySelector('.cards').appendChild(_li) */
 
@@ -62,5 +64,6 @@ const main = () => {
 mySection.textContent = 'Hello, World'
 document.querySelector('.container').appendChild(mySection) */
 }
+// i = shuffle
 
 document.addEventListener('DOMContentLoaded', main)
