@@ -24,8 +24,32 @@ body {
   width: 100%;
 }
 
+.new-card-faceup {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 0.5% solid black;
+  color: red;
+}
+
+.player-1-faceup {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 0.5% solid black;
+  color: red;
+}
+.deal {
+  display: flex;
+  align-items: center;
+  width: auto;
+  color: blue;
+}
+
 @media only screen and(min-width: 700px) {
   .game-name {
-    width: auto;
+    font-size: 2rem;
+    color: purple;
+    width: 33%;
   }
 }
