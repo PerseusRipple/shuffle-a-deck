@@ -55,8 +55,18 @@ const main = () => {
 
   // Deal Card
 
-  shuffle.splice(deck, 1)
-  return deck[shuffle]
+  const dealCard = () => {
+    let newCard = deck.splice(0, 1)
+   if (deck.length > 0) {
+const _li = document.createElement ('.li')
+_li.textContent= newCard
+document.querySelector('.Cards').appendChild(_li)
+   }
+
+  }
+
+  
+  
   console.log('return')
 
 
@@ -69,7 +79,5 @@ mySection.textContent = 'Hello, World'
 document.querySelector('.container').appendChild(mySection) */
 
 // i = shuffle
-document
-  .querySelector('#deal')
-  .addEventListener('click', -'deck[shuffle]')
-  .addEventListener('DOMContentLoaded', 'main')
+document.querySelector('#deal').addEventListener('click', dealCard)
+document.EventListener('DOMContentLoaded', main)

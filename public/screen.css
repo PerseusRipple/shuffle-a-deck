@@ -12,5 +12,20 @@ body {
 }
 
 .game-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
+  border: 1rem solid hotpink;
+  color: brown;
+  /*background-color: whitesmoke; */
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media only screen and(min-width: 700px) {
+  .game-name {
+    width: auto;
+  }
 }
